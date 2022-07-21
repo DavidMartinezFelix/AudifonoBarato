@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--icono marca-->
+    <link rel="shortcut icon" href="../assest/icons/favicon-96x96.png">
+    <!--Hoja de estilos de manera externa-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Selección de los mejores audífonos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html"><img  class="logo_header" src="../assest/icons/audifono-barato-logo1.png" alt="audifono barato logo"></a>
+            <ul class="menus" id="menus">
+                <li class="menus_li"><a class="menu_a" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+                <li class="menus_li"><a class="menu_a" href="./seleccion.html"><i class="fa fa-comments" aria-hidden="true"></i>Selección</a></li>
+                <li class="menus_li"><a class="menu_a" href="./servicios.html"><i class="fa fa-user" aria-hidden="true"></i>Servicios</a> </li>
+                <li class="menus_li"><a class="menu_a" href="./tienda.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Tienda</a></li>
+                <li class="menus_li"><a class="menu_a" href="./contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a></li>
+            </ul>
+            <div class="menu_bar" id="menu_bar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu_social">
+                <a class="menu_a" href="./contacto.html"><i class="fa fa-user" aria-hidden="true"></i>FB</a>
+                <a class="menu_a" href="./contacto.html"><i class="fa fa-user" aria-hidden="true"></i>TW</a>
+            </div>  
+        </nav>
+    </header> 
+    <main class="hero">
+        <div class="texto__principal">
+            <h1>Nuestra selección de audífonos</h1>
+            <h2>Elije la gama que mejor se adapte a su estilo de vida</h2>
+        </div>
+    </main>
+        <div class="padre__audifonos">
+            <section class="bloque__seccion1">
+                <div class="elemento__seccion1">
+                    <article class="subelemento__seccion1">
+                        <img class="subelemento__seccion_imagen" src="../assest/img/audifono ambientes ruidosos.webp" alt="Audífono en la cocina">
+                        <h3 class="subelemento__h3">Audífono Gama Confort 999€</h3>
+                        <ul class="subelemento__ul">
+                            <li class="subelemento__li">Ideales para el hogar</li>
+                            <li class="subelemento__li">Pequeñoas reuniones</li>
+                            <li class="subelemento__li">Entornos tranquilos</li>
+                        </ul>
+                        <a href="./tienda.html">
+                            <button class="subelemento__boton">Comprar</button>
+                        </a>
+                    </article>
+                    <article class="subelemento__seccion1">
+                        <img class="subelemento__seccion_imagen" src="../assest/img/Audifono en la cocina.jpg" alt="Audífono en la cocina">
+                        <h3 class="subelemento__h3">Audífono Gama Excelencia 999€</h3>
+                        <ul class="subelemento__ul">
+                            <li class="subelemento__li">Ideales para salidas</li>
+                            <li class="subelemento__li">Conversaciones en grupo</li>
+                            <li class="subelemento__li">Entornos ruidosos</li>
+                        </ul>
+                        <a href="./tienda.html">
+                            <button class="subelemento__boton">Comprar</button>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="bloque__seccion2">
+                <div class="elemento__seccion2">
+                    <article class="subelemento__seccion2">
+                        <img class="subelemento__seccion_imagen2" src="../assest/img/Contacto Experto.webp" alt="Audífono en la cocina">
+                    </article>
+                    <article class="subelemento__seccion3">
+                        <h3 class="h3__formulario_general">Contáctanos</h3>
+                        <form class="elemento__formulario_general" action="/formulario" method="post">
+                            <label class="elemento__formulario" for="nombre">Nombre</label>
+                                <input type="text" required="" id="nombre" name="Nombre" placeholder="David"/>
+                            <label class="elemento__formulario" for="apellidos">Apellidos</label>
+                                <input type="text" required="" id="Apellidos" name="Apellidos" placeholder="Apellidos"/>            
+                            <label class="elemento__formulario" for="email">email</label>
+                                <input type="email" required="" id="email" name="Email" placeholder="email"/>
+                            <label class="elemento__formulario" for="numero">Número de telefono</label>
+                                <input id="numero" required="" name="numero" placeholder="Número"/>
+                            <button class="elemento__formulario_boton" type="submit">Recibir llamada</button>
+                            <button class="elemento__formulario_boton1" type="reset">Borrar datos</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </div>
+    <footer class="padre__footer">
+        <article class="hijo__footer">
+            <h2 class="h2__footer">Desarrollado por Audifóno Barato</h2>
+            <a title="terminos-y-condiciones" href="https://www.visa.es/dufry/terminos-y-condiciones.html" target="_blank"><img src="../assest/img/botones-de-los-sistemas-pago-populares-masetcard-visa-apple-pay-google-un-sitio-web-son-rectangulares-con-bordes-redondeados-220153006.jpg" alt="terminos-y-condiciones" /></a>
+            <nav class="nav__footer">
+                <a class="a__footer" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+                <a class="a__footer" href="./seleccion.html"><i class="fa fa-user" aria-hidden="true"></i>Selección</a> </li>
+                <a class="a__footer" href="./servicios.html"><i class="fa fa-comments" aria-hidden="true"></i>Servicios</a></li>
+                <a class="a__footer" href="./tienda.html"><i class="fa fa-file-text" aria-hidden="true"></i>Tienda</a></li>
+                <a class="a__footer" href="./contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a></li>
+            </nav>
+            <form action="/formulario" method="post">
+                <label for="email"></label>
+                    <input  type="email" required="" id="email" name="email" placeholder="Registrate para recibir información"/>
+                    <button class="subelemento__boton_footer" type="submit">Susbcribirte</button>
+            </form>
+        </article>
+    </footer>
+
+</body>
+</html>
+
