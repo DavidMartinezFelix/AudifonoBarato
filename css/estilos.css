@@ -13,9 +13,9 @@ a{
 .logo_header{
     width: 90px;
     height:90px;
-
+}
 /*section MAIN*/
-.hero{
+.hero_23{
     background-image:url(../assest/img/pareja-header.jpg);
     background-image: fixed;
     background-image: center;
@@ -27,18 +27,18 @@ a{
     grid-template-columns: (8,1fr);
     grid-template-rows: (8,1fr);        
 }
-    .hero .texto__principal{
+    .hero_23 .texto__principal{
         grid-column: 4/8;
         grid-row: 6/8;
         color: #343434;
         }
-            .hero h1{
+            .hero_23 h1{
                 font-size: 3em;
                 font-weight: bold;
                 line-height: 1.6;
                 font-family: 'lora', serif;
             }
-            .hero h2{
+            .hero_23 h2{
                 font-size: 1.5em;
                 font-weight: bold;
                 line-height: 1.6;
@@ -679,6 +679,7 @@ a{
 .logo_header{
     width: 75%;
     height: 75%;
+}
 /*section footer*/
 
     .hijo__footer{
