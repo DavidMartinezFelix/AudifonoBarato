@@ -10,49 +10,9 @@ a{
 }
 
 /*Metodología BEM*/
-
-.navbar{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-    background-color: #cbcbcb;
-}
-    .logo_header{
-        width: 90px;
-        height:90px;
-        grid-column: 1/8;
-    }
-    .menus{
-        grid-column: 2/7;
-        display: flex;
-        justify-content: space-around;
-    }
-        .menus_li{
-            list-style: none;
-            color:#fff;
-            font-size: 11px;
-            text-transform: uppercase;
-            padding: 0 10px;
-            letter-spacing: 2px;
-        }
-        .menu_a{
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer;
-        }
-        .menu_a:hover{
-            color:#343434 ;
-        }
-        .menu_bar{
-            display: none;
-        }
-    .menu_social{
-        grid-column: 8/8;
-        padding: 0 10px;
-        letter-spacing: 2px;
-        font-size: 11px;
-        text-transform: uppercase;
-    }
+.logo_header{
+    width: 90px;
+    height:90px;
 
 /*section MAIN*/
 .hero{
@@ -716,25 +676,9 @@ a{
 
 @media only screen and (max-width: 576px) {
 /*Sección Header*/
-    .navbar{
-        grid-template-columns: (4,1fr);
-        grid-template-rows: (3,1fr);
-    }
-    .logo_header{
-        width: 75%;
-        height: 75%;
-        grid-column: 1/8;
-        grid-row: 1/3;
-        }
-    .menus{
-        grid-column:3/8;
-        grid-row: 1/3;
-        margin-bottom: 5px;
-        font-size: 1em;
-    }
-    .menu_social{
-        display: none;
-    }
+.logo_header{
+    width: 75%;
+    height: 75%;
 /*section footer*/
 
     .hijo__footer{
