@@ -8,12 +8,25 @@
 a{
     text-decoration: none;
 }
+.i{
+    font-size: 2rem;
+}
 
 /*Metodología BEM*/
 .logo_header{
     width: 90px;
     height:90px;
 }
+
+.navbar-nav {
+    color: #239560;
+    font-size: 1.2em;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+
 /*section MAIN*/
 .hero_23{
     background-image:url(../assest/img/pareja-header.jpg);

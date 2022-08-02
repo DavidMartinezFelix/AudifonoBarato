@@ -12,6 +12,8 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--Iconos Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--Hoja de estilos de manera externa-->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>AUDIFONO BARATO: Los mejores precios de audífonos</title>
@@ -27,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house-fill"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Pages/seleccion.html">Selección</a>
+                        <a class="nav-link" href="./Pages/seleccion.html"><i class="fa fa-comments" aria-hidden="true"></i> Selección</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Pages/servicios.html">Servicios</a>
+                        <a class="nav-link" href="./Pages/servicios.html"><i class="fa fa-user" aria-hidden="true"></i> Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Pages/tienda.html">Tienda</a>
+                        <a class="nav-link" href="./Pages/tienda.html"><i class="bi bi-cart-fill"></i> Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./Pages/contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -47,6 +49,34 @@
         </nav>
     </header>
     <main>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assest/img/retrato-feliz-anciano-mujer-hombre-estar-cerca-al-otro_273609-46000.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assest/img/f.elconfidencial.com_original_dac_bd9_9d8_dacbd99d8658b537cb2c9ddc675fe306.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assest/img/feliz-pareja-mayor-otono-parque-mentira_484921-26611.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
         <section class="hero_index">
             <article class="texto_index">
                 <h2 class="texto_index_h2">El servicio de Audifono Barato</h2>
@@ -147,24 +177,95 @@
                 </div>
         </section>
     </main>
-    <footer class="padre__footer">
-        <article class="hijo__footer">
-            <h2 class="h2__footer">Desarrollado por Audifóno Barato</h2>
-            <a title="terminos-y-condiciones" href="https://www.visa.es/dufry/terminos-y-condiciones.html" target="_blank"><img class="VISA" src="../assest/img/botones-de-los-sistemas-pago-populares-masetcard-visa-apple-pay-google-un-sitio-web-son-rectangulares-con-bordes-redondeados-220153006.jpg" alt="terminos-y-condiciones" /></a>
-            <nav class="nav__footer">
-                <a class="a__footer" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
-                <a class="a__footer" href="./seleccion.html"><i class="fa fa-user" aria-hidden="true"></i>Selección</a> </li>
-                <a class="a__footer" href="./servicios.html"><i class="fa fa-comments" aria-hidden="true"></i>Servicios</a></li>
-                <a class="a__footer" href="./tienda.html"><i class="fa fa-file-text" aria-hidden="true"></i>Tienda</a></li>
-                <a class="a__footer" href="./contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a></li>
-            </nav>
-            <form action="/formulario" method="post">
-                <label for="email"></label>
-                    <input  type="email" required="" id="email" name="email" placeholder="Registrate para recibir información"/>
-                    <button class="subelemento__boton_footer" type="submit">Susbcribirte</button>
-            </form>
-        </article>
-    </footer>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                <span>Mantente conectado siempre a traves de nuestras redes sociales</span>
+                </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                    <div class="row mt-3">
+                <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-deaf me-3"></i>Audífono Barato
+                    </h6>
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                    <div   div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Páginas</h6>
+                    <p>
+                        <a href="./index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="./Pages/seleccion.html" class="text-reset">Selección</a>
+                    </p>
+                    <p>
+                        <a href="./Pages/tienda.html" class="text-reset">Tienda</a>
+                    </p>
+                    <p>
+                        <a href="./Pages/contacto.html" class="text-reset">Contacto</a>
+                    </p>
+                    </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Enlaces de interes</h6>
+                    <p>
+                        <a href="#!" class="text-reset">Audífono</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Tinnitus</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Hipoacusia</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Ayuda</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i> Madrid, 28932</p>
+                    <p><i class="fas fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fas fa-phone me-3"></i>6605055737</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="../index.html">Audífono Barato</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
 <!--bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
