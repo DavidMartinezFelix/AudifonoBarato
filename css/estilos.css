@@ -128,7 +128,7 @@ a{
                         font-size: 16px;                    
                     }
                 .subelemento__boton{
-                    font-size: 1em;
+                    font-size: 1.5em;
                     color:orange;
                     background-color: blue;
                     line-height: 30px;
@@ -140,7 +140,7 @@ a{
                     border: 1px solid orange;
                     }
                 .subelemento__boton:hover{
-                    font-size: 1em;
+                    font-size: 1.5em;
                     color:blue;
                     background-color: orange;
                     text-transform: uppercase;
@@ -335,7 +335,7 @@ a{
     text-align: center;
 }
 .subelemento__boton_index{
-        font-size: 13px;
+        font-size: 1.5em;
         color:blue;
         background-color: orange;
         text-transform: uppercase;
@@ -343,7 +343,7 @@ a{
         margin-top: 5px;
         margin-bottom: 25px;
         margin-left: 5px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 10px;
         border-color: transparent;
     }
@@ -366,14 +366,14 @@ a{
     .hero_etapas_h3{
         font-size: 2em;
         padding-bottom: 20px;
-        padding-top: 80px;
+        padding-top: 50px;
         text-align: center;
     }
     .hero_etapas_ul{
         font-size: 1em;
         list-style-type: none;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: 100px;
         margin-right: 100px;
         text-align: center;
