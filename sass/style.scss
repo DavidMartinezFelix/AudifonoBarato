@@ -1,3 +1,10 @@
+//Variables
+$background:red;
+
+body{
+    background-color: $background
+}
+
 *{
     margin: 0;
     padding: 0;
