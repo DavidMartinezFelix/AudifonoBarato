@@ -20,8 +20,8 @@ a {
 
 /*Metodología BEM*/
 .logo_header {
-  width: 90px;
   height: 90px;
+  width: 90px;
 }
 
 .navbar-nav {
@@ -533,27 +533,7 @@ a {
   text-transform: uppercase;
 }
 
-.elemento__header1 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__header2 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__header3 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__header4 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__header5 {
+.elemento__header1, .elemento__footer5, .elemento__footer4, .elemento__footer3, .elemento__footer2, .elemento__footer1, .elemento__header5, .elemento__header4, .elemento__header3, .elemento__header2 {
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -569,31 +549,6 @@ a {
   list-style-type: none;
   width: 100%;
   text-transform: uppercase;
-}
-
-.elemento__footer1 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__footer2 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__footer3 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__footer4 {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.elemento__footer5 {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 /*Bloque 1*/
@@ -776,8 +731,8 @@ a {
 @media only screen and (max-width: 576px) {
   /*Sección Header*/
   .logo_header {
-    width: 75%;
     height: 75%;
+    width: 75%;
   }
   /*section footer*/
   .hijo__footer {

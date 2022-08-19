@@ -1,4 +1,9 @@
 @import "fuentes";
+@mixin sizes ($ancho,$alto){
+    height:$alto;
+    width:$ancho;
+}
+    
 
 //Variables
 $tituloh1:3em;
@@ -23,8 +28,7 @@ a{
 
 /*Metodología BEM*/
 .logo_header{
-    width: 90px;
-    height:90px;
+    @include sizes(90px,90px)
 }
 
 .navbar-nav {
@@ -486,23 +490,21 @@ a{
 }
 
 .elemento__header2{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 .elemento__header3{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 .elemento__header4{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
+
 }
 
 .elemento__header5{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
+
 }
 
 .bloque__header1{
@@ -519,28 +521,24 @@ a{
 }
 
 .elemento__footer1{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 .elemento__footer2{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 .elemento__footer3{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 .elemento__footer4{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
+
 }
 
 .elemento__footer5{
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend .elemento__header1;
 }
 
 
@@ -673,8 +671,6 @@ a{
     text-align: center;
 }
 
-
-
 .contenedor__footer{
     display: flex;
     width: 100%;
@@ -691,8 +687,7 @@ a{
 .bloque__footer_principal{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
-    
+    align-items: baseline;  
 }
 
 /*Modificador*/
@@ -707,7 +702,6 @@ a{
     border-radius: 20px;
     text-align: center;
     margin-left: 50%;
-
 }
 
 .boton--alternativo:hover{
@@ -722,7 +716,6 @@ a{
     text-align: center;
     text-transform: uppercase;
     margin-left: 50%;
-
 }
 
 /*Media Queries*/
@@ -733,8 +726,7 @@ a{
 @media only screen and (max-width: 576px) {
 /*Sección Header*/
 .logo_header{
-    width: 75%;
-    height: 75%;
+    @include sizes(75%,75%)
 }
 /*section footer*/
 
