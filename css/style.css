@@ -1,4 +1,22 @@
 @charset "UTF-8";
+@media only screen and (max-width: 576px) {
+  /*Sección Header*/
+  .logo_header {
+    width: 75%;
+  }
+  /*section footer*/
+  .hijo__footer {
+    flex-flow: column;
+  }
+  .nav__footer {
+    font-size: 0.4em;
+    letter-spacing: 0px;
+    padding-bottom: 5px;
+  }
+  .VISA {
+    height: 50px;
+  }
+}
 h1 {
   font-size: 3em;
 }
@@ -725,217 +743,230 @@ a {
   margin-left: 50%;
 }
 
-/*Media Queries*/
-@media only screen and (max-width: 576px) {
-  /*Sección Header*/
-  .logo_header {
-    height: 75%;
-    width: 75%;
-  }
-  /*section footer*/
-  .hijo__footer {
-    flex-flow: column;
-  }
-  .nav__footer {
-    font-size: 0.4em;
-    letter-spacing: 0px;
-    padding-bottom: 5px;
-  }
-  .VISA {
-    height: 50px;
-  }
-  /*section MAIN*/
-  .hero {
-    background-image: url(../assest/img/pareja-header.jpg);
-    background-image: fixed;
-    background-image: center;
-    background-size: cover;
-    opacity: 0.9;
-    height: 50vh;
-    max-width: 100%;
-    grid-template-columns: 8, 1fr;
-    grid-template-rows: 8, 1fr;
-  }
-  .hero .texto__principal {
-    grid-column: 6/8;
-    grid-row: 6/8;
-  }
-  .hero h1 {
-    font-size: 1.5em;
-  }
-  .hero h2 {
-    font-size: 0.9em;
-  }
-  /*Seccion DIV*/
-  .bloque__seccion1 {
-    display: flex;
-  }
-  .elemento__seccion1 {
-    flex-flow: column;
-  }
-  .subelemento__seccion_imagen {
-    margin-top: 10PX;
-    width: 30vh;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-    transform: skewX(0deg) skewY(0deg);
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  .bloque__seccion2 {
-    display: flex;
-  }
-  .elemento__seccion2 {
-    flex-direction: row;
-  }
-  .bloque__seccion2 {
-    display: flex;
-  }
-  .elemento__seccion2 {
-    flex-flow: column;
-  }
-  .subelemento__seccion4 {
-    flex: 1 1 100%;
-    width: 80%;
-    color: #fff;
-    padding-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1em;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    background-color: rgba(156, 48, 48, 0.795);
-    border-radius: 20px;
-  }
-  .subelemento__seccion_imagen3 {
-    margin-top: 10PX;
-    width: 80%;
-    flex: 1 1 100%;
-    border-radius: 10px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-    transform: skewX(1deg) skewY(1deg);
-  }
-  .subelemento__seccion_imagen3:hover {
-    transform: skewX(-1deg) skewY(-1deg);
-    transition: all 2sg;
-  }
-  /*SECCION HOME INDEX*/
-  .hero_index {
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .texto_index {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    align-items: center;
-    background-color: #fff;
-    margin-left: 5px;
-  }
-  .texto_index_h2 {
-    grid-column: 2/6;
-    grid-row: 3/4;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  .texto_index_h1 {
-    grid-column: 2/6;
-    grid-row: 1/2;
-    font-size: 2em;
-    text-align: center;
-  }
-  .texto_index_p {
-    grid-column: 2/6;
-    grid-row: 2/3;
-    font-size: 1em;
-    text-align: center;
-  }
-  .texto_index_ul {
-    grid-column: 2/6;
-    grid-row: 4/5;
-    font-size: 1em;
-    list-style: none;
-    text-align: center;
-  }
-  .imagenes_index {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-  }
-  .imagen_1 {
-    padding-bottom: 5px;
-    border-radius: 25px;
-  }
-  .imagen_2 {
-    padding-bottom: 5px;
-    border-radius: 25px;
-    height: 50vh;
-  }
-  .imagen_3 {
-    padding-bottom: 5px;
-    border-radius: 25px;
-  }
-  .hero_etapas {
-    display: flex;
-    flex-flow: column-reverse nowrap;
-  }
-  .hero_etapas1 {
-    flex-flow: column nowrap;
-  }
-  .hero_etapas1 {
-    border-radius: 20px;
-    height: 60vh;
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    align-items: center;
-  }
-  .hero_etapas_2 {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .hero_etapas_h3 {
-    font-size: 2em;
-    padding-bottom: 0px;
-    padding-top: 10px;
-    text-align: center;
-  }
-  .hero_etapas_ul {
-    font-size: 0.8em;
-    list-style-type: none;
-    padding: 10px;
-    margin-top: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
-  }
-  .hero_etapas_li {
-    font-size: 1.5em;
-    padding: 20px;
-  }
-  .hero_etapas_li1 {
-    list-style-type: none;
-    font-size: 1.3em;
-    margin-bottom: 10px;
-  }
-  .bloque_seccion4 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-  .pagina_footer_flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
+/*section MAIN*/
+.hero {
+  background-image: url(../assest/img/pareja-header.jpg);
+  background-image: fixed;
+  background-image: center;
+  background-size: cover;
+  opacity: 0.9;
+  height: 50vh;
+  max-width: 100%;
+  grid-template-columns: 8, 1fr;
+  grid-template-rows: 8, 1fr;
+}
+
+.hero .texto__principal {
+  grid-column: 6/8;
+  grid-row: 6/8;
+}
+
+.hero h1 {
+  font-size: 1.5em;
+}
+
+.hero h2 {
+  font-size: 0.9em;
+}
+
+/*Seccion DIV*/
+.bloque__seccion1 {
+  display: flex;
+}
+
+.elemento__seccion1 {
+  flex-flow: column;
+}
+
+.subelemento__seccion_imagen {
+  margin-top: 10PX;
+  width: 30vh;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  transform: skewX(0deg) skewY(0deg);
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.bloque__seccion2 {
+  display: flex;
+}
+
+.elemento__seccion2 {
+  flex-direction: row;
+}
+
+.bloque__seccion2 {
+  display: flex;
+}
+
+.elemento__seccion2 {
+  flex-flow: column;
+}
+
+.subelemento__seccion4 {
+  flex: 1 1 100%;
+  width: 80%;
+  color: #fff;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgba(156, 48, 48, 0.795);
+  border-radius: 20px;
+}
+
+.subelemento__seccion_imagen3 {
+  margin-top: 10PX;
+  width: 80%;
+  flex: 1 1 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  transform: skewX(1deg) skewY(1deg);
+}
+
+.subelemento__seccion_imagen3:hover {
+  transform: skewX(-1deg) skewY(-1deg);
+  transition: all 2sg;
+}
+
+/*SECCION HOME INDEX*/
+.hero_index {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.texto_index {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.texto_index_h2 {
+  grid-column: 2/6;
+  grid-row: 3/4;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.texto_index_h1 {
+  grid-column: 2/6;
+  grid-row: 1/2;
+  font-size: 2em;
+  text-align: center;
+}
+
+.texto_index_p {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  font-size: 1em;
+  text-align: center;
+}
+
+.texto_index_ul {
+  grid-column: 2/6;
+  grid-row: 4/5;
+  font-size: 1em;
+  list-style: none;
+  text-align: center;
+}
+
+.imagenes_index {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.imagen_1 {
+  padding-bottom: 5px;
+  border-radius: 25px;
+}
+
+.imagen_2 {
+  padding-bottom: 5px;
+  border-radius: 25px;
+  height: 50vh;
+}
+
+.imagen_3 {
+  padding-bottom: 5px;
+  border-radius: 25px;
+}
+
+.hero_etapas {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.hero_etapas1 {
+  flex-flow: column nowrap;
+}
+
+.hero_etapas1 {
+  border-radius: 20px;
+  height: 60vh;
+  margin-left: 50px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.hero_etapas_2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.hero_etapas_h3 {
+  font-size: 2em;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.hero_etapas_ul {
+  font-size: 0.8em;
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.hero_etapas_li {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.hero_etapas_li1 {
+  list-style-type: none;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.bloque_seccion4 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.pagina_footer_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */
