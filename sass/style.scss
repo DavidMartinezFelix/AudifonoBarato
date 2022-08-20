@@ -3,7 +3,13 @@
     height:$alto;
     width:$ancho;
 }
-    
+
+$estilos:(
+    naranja:orange,
+    verde:#239560,
+    negro:#343434,
+    blanco:#f7f7f7,
+);
 
 //Variables
 $tituloh1:3em;
@@ -32,7 +38,7 @@ a{
 }
 
 .navbar-nav {
-    color: #239560;
+    color: map-get($estilos,verde);
     font-size: 1.2em;
 }
 
@@ -559,8 +565,7 @@ a{
 }
 
 .flex-container2{
-    display: flex;
-    flex-direction: row;
+    @extend .elemento__container2;
     justify-content: center;
 }
 
