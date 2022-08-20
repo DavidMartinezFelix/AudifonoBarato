@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--icono marca-->
     <link rel="shortcut icon" href="../assest/icons/favicon-96x96.png">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--Iconos Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!--Hoja de estilos de manera externa-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Servicios de Audífono Barato</title>
@@ -88,28 +92,101 @@
         </section>
     </main>
 
-<footer id="footer">
-    <article>
-        <h2>Desarrollado por Audifóno Barato</h2>
-        <a title="terminos-y-condiciones" href="https://www.visa.es/dufry/terminos-y-condiciones.html" target="_blank"><img src="../assest/img/botones-de-los-sistemas-pago-populares-masetcard-visa-apple-pay-google-un-sitio-web-son-rectangulares-con-bordes-redondeados-220153006.jpg" alt="terminos-y-condiciones" /></a>
-        <nav>
-            <!--hipervinculos a mis distintas paginas web-->
-            <!--Link a mis paginas-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./seleccion.html">Selección</a> </li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <form action="/formulario" method="post">
-            <label for="email"></label>
-                <input type="email" required="" id="email" name="email" placeholder="Registrate para recibir información"/>
-                <button type="submit">Susbcribirte</button>
-        </form>
-    </article>
-</footer>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                <span>Mantente conectado siempre a traves de nuestras redes sociales</span>
+                </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                    <div class="row mt-3">
+                <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-deaf me-3"></i>Audífono Barato
+                    </h6>
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                    <div   div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Páginas</h6>
+                        <DIV class="pagina_footer_flex">
+                        <p>
+                            <a href="./index.html" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/seleccion.html" class="text-reset">Selección</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/tienda.html" class="text-reset">Tienda</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/contacto.html" class="text-reset">Contacto</a>
+                        </p>
+                        </DIV>
+                    </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Enlaces de interes</h6>
+                        <DIV class="pagina_footer_flex">
+                        <p>
+                            <a href="#!" class="text-reset">Audífono</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tinnitus</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Hipoacusia</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ayuda</a>
+                        </p>
+                        </DIV>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <DIV class="pagina_footer_flex">
+                        <p><i class="fas fa-home me-3"></i> Madrid, 28932</p>
+                        <p><i class="fas fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i>6605055737</p>
+                    </DIV>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="../index.html">Audífono Barato</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
 <!--bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

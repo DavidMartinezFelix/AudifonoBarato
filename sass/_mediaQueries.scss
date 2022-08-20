@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+/*Sección Header*/
+.logo_header{
+    @include sizes(75%,75%)
+}
+/*section footer*/
+
+    .hijo__footer{
+        flex-flow:column
+    }
+    .nav__footer{
+        font-size: .4em;
+        letter-spacing: 0px;
+        padding-bottom: 5px;
+    }
+    .VISA{
+        height: 50px;
+    }
+}
